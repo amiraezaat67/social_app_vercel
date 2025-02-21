@@ -23,7 +23,7 @@ const bootstrap = async () => {
   database_connection()
   
   const server =  app.listen(port, () => {
-      console.log('Social App server is running on port ' , port)
+      console.log('Social App server is running on port BE ' , port)
     })   
 
   // establishSocketConnection(server)
