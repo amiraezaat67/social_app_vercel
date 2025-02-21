@@ -29,7 +29,7 @@ const controllerHandler = async (app, express) =>{
     app.use('/react' , controllers.reactController)
     
     // Main Router
-    app.get('/', async (req, res) => res.status(200).json({ message: 'Social App server is running from vercel'}))
+    app.get('/', async (req, res) => res.status(200).json({ message: 'Social App server is running correclty'}))
     
     // Handle not found routers
     app.all('*', (req, res) => res.status(404).json({ message: 'Route not found please make sure from your url and your method' }) )
